@@ -62,7 +62,7 @@ button {
     font-size: 1.5rem;
     cursor: pointer;
 }
-@media only screen and (max-height: 1000px){
+@media only screen and (max-height: 800px){
     button {
         position: absolute;
         bottom: 0;
