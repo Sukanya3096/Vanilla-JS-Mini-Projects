@@ -35,6 +35,7 @@ const quizData = [
 
 let currentQuestion = 0;
 let score = 0;
+let themeFlag = false;
 const quiz = document.querySelector(".quiz-container");
 const answers = document.querySelectorAll('.answer');
 const a_text = document.getElementById('a_text');
@@ -70,6 +71,7 @@ function deselectAnswers() {
     answers.forEach(ans => ans.checked = false);
 }
 function darkMode() {
+    themeFlag = !themeFlag;
     var element = document.body;
     element.classList.toggle("dark-mode");
 
@@ -87,8 +89,12 @@ submitBtn.addEventListener('click', () => {
         if (currentQuestion < quizData.length) {
             loadQuestion();
         } else {
-            quiz.innerHTML = `<h2>You answered correctly ${score}/${quizData.length} questions!</h2>
-            <button onclick="location.reload()">Reload</button>`
+            quiz.innerHTML = `<h2 id="result">You answered correctly ${score}/${quizData.length} questions!</h2>
+            <button class="submit" onclick="location.reload()">Reload</button>`
+            
+            if(themeFlag) {
+                document.getElementById("result").classList.toggle("header-question");
+            }
         }
      }
 
