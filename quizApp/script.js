@@ -69,6 +69,13 @@ function getSelected() {
 function deselectAnswers() {
     answers.forEach(ans => ans.checked = false);
 }
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+    quiz.classList.toggle("dark-mode-container")
+    question.classList.toggle("header-question");
+  }
 
 submitBtn.addEventListener('click', () => {
     const answer = getSelected();

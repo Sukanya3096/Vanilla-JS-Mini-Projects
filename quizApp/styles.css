@@ -23,11 +23,15 @@ body {
     box-shadow: 0 0 5px 10px rgba(100, 100, 100, 0.1);
     max-width: 100%;
     overflow: hidden;
+    position: relative;
 
     
 }
 .quiz-header {
     padding: 4rem;
+}
+.header-question {
+    color: #fff;
 }
 
 ul {
@@ -51,7 +55,19 @@ ul li {
 ul li label {
     cursor: pointer;
 }
-button {
+button.dark {
+    background-color: #b0f3f1;
+    border-radius: 10px;
+    padding: 0.7rem;
+    border: none;
+    box-shadow: 0 0 5px 2px rgba(100, 100, 100, 0.1);
+    position:absolute;
+    margin: 2%;
+    right: 0;
+    cursor: pointer;
+
+}
+button.submit {
     background-color:#d2c2d1;
     display: block;
     width: 100%;
@@ -63,7 +79,7 @@ button {
     cursor: pointer;
 }
 @media only screen and (max-height: 800px){
-    button {
+    button.submit {
         position: absolute;
         bottom: 0;
     }
@@ -74,6 +90,20 @@ button {
 
 }
 
-button:hover {
+button.submit:hover {
     background-color: #cab1c9;
 }
+.dark-mode {
+    background-color: #537895;
+background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  }
+  .dark-mode-container {
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+
+    @media only screen and (max-height: 800px){ 
+        background-color: #537895;
+        color: #fff;
+background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+    }
+  }
