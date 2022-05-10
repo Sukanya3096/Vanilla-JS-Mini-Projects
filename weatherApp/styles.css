@@ -33,23 +33,15 @@ body {
 .card-bottom span {
     font-size: 12px;
 }
-@media screen and (max-width: 450px){
-    .container {
-        min-width: 300px;
-        max-width: 300px;
-    }
-    .title {
-            font-size: 40px;
-    }
-    .card-bottom p {
-        font-size: 2rem;
-        letter-spacing: -1px;
-    }
-    
-    .card-bottom span {
-        font-size: 10px;
-    }
+
+.city-name span {
+    font-size: 32px;
+    font-weight: 300px;
+    position: relative;
+    top:-40px;
+    letter-spacing: -1rem;
 }
+
 .form-rounded {
     border-radius: 2em;
 }
@@ -65,13 +57,6 @@ body {
 .city-name p {
 font-size: 28px;
 font-weight: 600;
-}
-
-.city-name span {
-    font-size: 20px;
-    font-weight: 300px;
-    position: relative;
-    top:-20px;
 }
 
 .temp {
@@ -124,4 +109,26 @@ text-transform: capitalize;
 
 .icon-container img {
     margin: auto;
+}
+@media screen and (max-width: 450px){
+    .container {
+        min-width: 300px;
+        max-width: 300px;
+    }
+    .title {
+            font-size: 40px;
+    }
+    .card-bottom p {
+        font-size: 2rem;
+        letter-spacing: -1px;
+    }
+    
+    .card-bottom span {
+        font-size: 10px;
+    }
+
+    .city-name span {
+        font-size: 28px;
+    }
+    
 }
