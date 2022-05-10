@@ -20,6 +20,19 @@ body {
     min-width: 400px;
     max-width: 400px;
 }
+.card-bottom {
+    line-height: 0.4;
+}
+
+.card-bottom p {
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: -3px;
+}
+
+.card-bottom span {
+    font-size: 12px;
+}
 @media screen and (max-width: 450px){
     .container {
         min-width: 300px;
@@ -27,6 +40,14 @@ body {
     }
     .title {
             font-size: 40px;
+    }
+    .card-bottom p {
+        font-size: 2rem;
+        letter-spacing: -1px;
+    }
+    
+    .card-bottom span {
+        font-size: 10px;
     }
 }
 .form-rounded {
@@ -103,18 +124,4 @@ text-transform: capitalize;
 
 .icon-container img {
     margin: auto;
-}
-
-.card-bottom {
-    line-height: 0.4;
-}
-
-.card-bottom p {
-    font-size: 3rem;
-    font-weight: 200;
-    letter-spacing: -5px;
-}
-
-.card-bottom span {
-    font-size: 12px;
 }
