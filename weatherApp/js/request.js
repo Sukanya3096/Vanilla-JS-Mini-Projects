@@ -1,8 +1,8 @@
-import WEATHER_API_KEY from './api-keys';
+import WEATHER_API_KEY from './api-keys.js';
 
 
 
-const requestCity = async (city) => {
+export const requestCity = async (city) => {
     const baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
     const query = `?q=${city}&appid=${WEATHER_API_KEY}`
 
@@ -11,3 +11,4 @@ const requestCity = async (city) => {
 
     return data;
 }
+

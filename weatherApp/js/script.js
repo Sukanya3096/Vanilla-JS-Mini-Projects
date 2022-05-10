@@ -1,3 +1,5 @@
+import {requestCity} from './request.js';
+
 const searchForm = document.querySelector('.search-location');
 const city = document.querySelector('.search-location input');
 const cityName = document.querySelector('.city-name p');
@@ -71,7 +73,7 @@ searchForm.addEventListener('submit', (e)=> {
     console.log(citySearch);
     searchForm.reset();
 
-    requestCity(citySearch)
+     requestCity(citySearch)
     .then((data) => {
         updateWeatherApp(data)
     })
