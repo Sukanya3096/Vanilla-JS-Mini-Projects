@@ -426,11 +426,11 @@ input[type=number] {
 
 @media  screen and (max-height: 1000px) {
     .budget-container{
-        width: 420px;
+        width: 400px;
         height: 700px;
     }
     .budget-dashboard {
-        width: 420px;
+        width: 400px;
         height: 470px;
     }
 }
