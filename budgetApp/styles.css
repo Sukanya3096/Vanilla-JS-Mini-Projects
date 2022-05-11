@@ -428,6 +428,7 @@ input[type=number] {
     .budget-container{
         width: 400px;
         height: 700px;
+        min-height: 80vh;
     }
     .budget-dashboard {
         width: 400px;
@@ -436,4 +437,16 @@ input[type=number] {
     .budget-dashboard #income .input{
         width: 400px;
     }
+}
+@media screen and (max-width: 360px){
+    .budget-container{
+        width: 380px;
+    }
+    .budget-dashboard {
+        width: 380px;
+    }
+    .budget-dashboard #income .input{
+        width: 380px;
+    }
+    
 }
