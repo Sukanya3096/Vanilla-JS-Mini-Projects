@@ -433,4 +433,7 @@ input[type=number] {
         width: 400px;
         height: 470px;
     }
+    .budget-dashboard #income .input{
+        width: 400px;
+    }
 }
