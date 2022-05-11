@@ -39,6 +39,7 @@ input[type=number] {
     background-color: #34006a;
 }
 
+
 .budget-container .app-title{
     margin-top: 45px;
     margin-left: 20px;
@@ -423,3 +424,13 @@ input[type=number] {
     background-repeat: no-repeat;
 }
 
+@media  screen and (max-height: 1000px) {
+    .budget-container{
+        width: 420px;
+        height: 700px;
+    }
+    .budget-dashboard {
+        width: 420px;
+        height: 470px;
+    }
+}
