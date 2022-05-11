@@ -5,3 +5,4 @@ All the projects are hosted in netlify.
 
 1. quiz app: https://suku-quiz-app.netlify.app/
 2. weather app: https://suku-weather-app.netlify.app/
+3. budget planner app: https://suku-budget-planner-app.netlify.app/
